@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .location-container {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        padding: 65px 0;
+      }
+
+      .location {
+        width: 275px;
+        height: 370px;
+        background-size: cover;
+        border-radius: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        box-shadow: 8px 8px rgba(41, 114, 139, 0.25),
+          -8px -8px rgba(31, 114, 170, 0.46);
+        position: relative;
+      }
+
+      .location-bg {
+        background-color: rgba(41, 41, 41, 0.4);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: 40px;
+        opacity: 0;
+        transition: opacity 1s;
+      }
+
+      .location-text {
+        position: relative;
+        z-index: 10;
+        width: 232px;
+        color: rgba(253, 253, 254, 0.8);
+        transition: color 1s;
+        font-size: 37px;
+        font-family: "Bebas Neue";
+        text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.65);
+      }
+
+      .location:hover .location-bg {
+        opacity: 1;
+      }
+
+      .location:hover .location-text {
+        color: white;
+      }
+
+      .dad {
+        border: 4px solid transparent;
+      }
+
+      .dad:hover {
+        border: 4px solid white;
+      }
+
+      .dad:hover .pic {
+        opacity: 1;
+        display: block;
+      }
+      .pic {
+        opacity: 0;
+        display: none;
+      }
+      .box {
+        width: 384px;
+        height: 527px;
+        border-radius: 40px;
+        background-color: white;
+        padding: 24px;
+      }
+      .Font {
+        font-size: 18px;
+        width: 500px;
+        font-family: sans-serif;
+        margin: 0;
+        justify-content: center;
+        color: rgba(63, 65, 69, 1);
+      }
+      .button {
+        width: 336px;
+        height: 48px;
+        min-width: 80px;
+        gap: 4px;
+        border-radius: 30px;
+        border: 0;
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -1%;
+        margin-top: 51px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(164, 209, 226, 1);
+      }
+      .button:hover {
+        color: rgba(24, 24, 27, 0.9);
+      }
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        color: #d5e3e8;
+        width: 1440px;
+      "
+    >
+      <div
+        style="
+          background-image: url(HeroImage.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 1440px;
+          height: 1300px;
+          font-family: sans-serif;
+          background-position: center;
+          margin: 0px;
+        "
+      >
+        <header
+          style="
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            padding-top: 30px;
+          "
+        >
+          <div>
+            <img src="logo 1.png" style="width: 101px; height: 34px" alt="" />
+          </div>
+          <div style="display: flex; color: white; gap: 24px">
+            <div
+              style="
+                width: 100px;
+                height: 22px;
+                font-size: 18px;
+                margin-left: 307px;
+              "
+            >
+              Home
+            </div>
+            <div style="width: 100px; height: 22px; font-size: 18px">About</div>
+            <div style="width: 100px; height: 22px; font-size: 18px">
+              Contact
+            </div>
+            <div style="gap: o; width: 20px; height: 20px; margin-right: 364px">
+              <img src="Vector.png" alt="" />
+            </div>
+            <div style="height: 40px; width: 40px; color: #ffffff">
+              <img src="Language.svg" alt="" />
+            </div>
+          </div>
+        </header>
+        <div
+          style="
+            text-align: center;
+            font-family: sans-serif;
+            margin-bottom: 169px;
+            margin: 163px;
+          "
+        >
+          <div style="color: #e8edf2b8; font-size: 80px">PURE MAGIC</div>
+          <div style="color: #fdfdfe; font-size: 250px">AWAITS</div>
+          <div style="color: #ffffff; font-size: 64px">2024</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        background-color: #d5e3e8;
+        width: 1440px;
+      "
+    >
+      <div class="location-container">
+        <div class="location" style="background-image: url(image.png)">
+          <div class="location-text">TERKHIIN TSAGAAN LAKE</div>
+          <div class="location-bg"></div>
+        </div>
+
+        <div class="location" style="background-image: url(image-2.png)">
+          <div class="location-text">AMARBAYSGALANT MONASTERY</div>
+          <div class="location-bg"></div>
+        </div>
+
+        <div class="location" style="background-image: url(image-3.png)">
+          <div class="location-text">KHUVSGUL LAKE</div>
+          <div class="location-bg"></div>
+        </div>
+        <div class="location" style="background-image: url(image-4.png)">
+          <div class="location-text">KHORGIIN TOGOO</div>
+          <div class="location-bg"></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: #d5e3e8; width: 1440px">
+      <div
+        style="
+          background-image: url('map.png');
+          width: 1440px;
+          height: 1022px;
+          margin: auto;
+          position: relative;
+        "
+      >
+        <div
+          style="
+            font-family: Inter;
+            font-size: 27px;
+            letter-spacing: 0%;
+
+            vertical-align: bottom;
+          "
+        >
+          <h1 style="padding-top: 100px; margin: 0; text-align: center">
+            Destination of Our Agency
+          </h1>
+          <p
+            style="
+              color: #18181bb2;
+              font-size: 20px;
+              font-family: inter;
+              margin-top: 4px;
+              text-align: center;
+            "
+          >
+            Pack your bags and get ready
+          </p>
+
+          <img
+            style="
+              width: 647px;
+              height: 640px;
+              position: absolute;
+              right: 115px;
+              top: 270px;
+            "
+            src="MapPin-1.png"
+            alt=""
+          />
+
+          <div
+            class="dad"
+            style="
+              width: 483px;
+              height: 112px;
+              border-radius: 120px;
+              background-color: #eee9d9;
+              padding-left: 30px;
+              display: flex;
+              margin-top: 75px;
+              margin-left: 120px;
+            "
+          >
+            <div style="display: flex; align-items: center">
+              <div
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 24px;
+                  color: black;
+                "
+              >
+                Sukhbaatar square
+                <div class="pic">
+                  <img
+                    style="
+                      width: 280px;
+                      height: 280px;
+                      position: absolute;
+                      right: 131px;
+                      top: 329px;
+                    "
+                    src="pic.png"
+                    alt=""
+                  />
+                </div>
+                <div style="margin-left: 0%">
+                  <img src="ulnbtr.png" alt="" />
+                  <img src="Location Details.png" alt="" />
+                </div>
+              </div>
+
+              <div
+                style="
+                  width: 52px;
+                  height: 52px;
+                  border-radius: 50%;
+                  background-color: white;
+                  margin-left: 184px;
+                  font-size: 14px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                DAY 1
+              </div>
+            </div>
+          </div>
+          <div
+            class="dad"
+            style="
+              width: 483px;
+              height: 112px;
+              border-radius: 120px;
+              background-color: rgba(139, 184, 193, 0.8);
+              padding-left: 30px;
+              display: flex;
+              margin-top: 20px;
+              margin-left: 120px;
+            "
+          >
+            <div style="display: flex; align-items: center">
+              <div
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 24px;
+                  color: black;
+                "
+              >
+                Amarbaysgalant-monastery
+                <div class="pic">
+                  <img
+                    style="
+                      width: 280px;
+                      height: 280px;
+                      position: absolute;
+                      right: 327px;
+                      top: 220px;
+                    "
+                    src="pic-1.png"
+                    alt=""
+                  />
+                </div>
+                <div style="margin-left: 0%">
+                  <img src="ulnbtr.png" alt="" />
+                  <img src="Location Details (1).png" alt="" />
+                </div>
+              </div>
+
+              <div
+                style="
+                  width: 52px;
+                  height: 52px;
+                  border-radius: 50%;
+                  background-color: white;
+                  margin-left: 90px;
+                  font-size: 14px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                DAY 2
+              </div>
+            </div>
+          </div>
+          <div
+            class="dad"
+            style="
+              width: 483px;
+              height: 112px;
+              border-radius: 120px;
+              background-color: rgba(170, 216, 215, 0.8);
+              padding-left: 30px;
+              display: flex;
+              margin-top: 20px;
+              margin-left: 120px;
+            "
+          >
+            <div style="display: flex; align-items: center">
+              <div
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 24px;
+                  color: black;
+                "
+              >
+                Khorgiin togoo
+                <div class="pic">
+                  <img
+                    style="
+                      width: 280px;
+                      height: 280px;
+                      position: absolute;
+                      right: 458px;
+                      top: 347px;
+                    "
+                    src="pic-2.png"
+                    alt=""
+                  />
+                </div>
+                <div style="margin-left: 0%">
+                  <img src="ulnbtr.png" alt="" />
+                  <img src="Location Details (2).png" alt="" />
+                </div>
+              </div>
+
+              <div
+                style="
+                  width: 52px;
+                  height: 52px;
+                  border-radius: 50%;
+                  background-color: white;
+                  margin-left: 230px;
+                  font-size: 14px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                DAY 3
+              </div>
+            </div>
+          </div>
+          <div
+            class="dad"
+            style="
+              width: 483px;
+              height: 112px;
+              border-radius: 120px;
+              background-color: rgba(139, 192, 189, 0.8);
+              padding-left: 30px;
+              display: flex;
+              margin-top: 20px;
+              margin-left: 120px;
+            "
+          >
+            <div style="display: flex; align-items: center">
+              <div
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 24px;
+                  color: black;
+                "
+              >
+                Terkhiin tsagaan lake
+                <div class="pic">
+                  <img
+                    style="
+                      width: 280px;
+                      height: 280px;
+                      position: absolute;
+                      right: 500px;
+                      top: 165px;
+                    "
+                    src="pic-3.png"
+                    alt=""
+                  />
+                </div>
+                <div style="margin-left: 0%">
+                  <img src="ulnbtr.png" alt="" />
+                  <img src="Location Details (3).png" alt="" />
+                </div>
+              </div>
+
+              <div
+                style="
+                  width: 52px;
+                  height: 52px;
+                  border-radius: 50%;
+                  background-color: white;
+                  margin-left: 160px;
+                  font-size: 14px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                DAY 4
+              </div>
+            </div>
+          </div>
+          <div
+            class="dad"
+            style="
+              width: 483px;
+              height: 112px;
+              border-radius: 120px;
+              background-color: rgba(151, 204, 224, 0.8);
+              padding-left: 30px;
+              display: flex;
+              margin-top: 20px;
+              margin-left: 120px;
+            "
+          >
+            <div style="display: flex; align-items: center">
+              <div
+                style="
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 24px;
+                  color: black;
+                "
+              >
+                Khuvsgul lake
+                <div class="pic">
+                  <img
+                    style="
+                      width: 280px;
+                      height: 280px;
+                      position: absolute;
+                      right: 344px;
+                      top: 183px;
+                    "
+                    src="pic-4.png"
+                    alt=""
+                  />
+                </div>
+                <div style="margin-left: 0%">
+                  <img src="ulnbtr.png" alt="" />
+                  <img src="Location Details (4).png" alt="" />
+                </div>
+              </div>
+
+              <div
+                style="
+                  width: 52px;
+                  height: 52px;
+                  border-radius: 50%;
+                  background-color: white;
+                  margin-left: 235px;
+                  font-size: 14px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                DAY 5
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="
+        width: 1440px;
+        height: 1120px;
+        background-image: url(bg\ color.png);
+      "
+    >
+      <div
+        style="
+          font-family: Inter;
+          font-size: 27px;
+          letter-spacing: 0%;
+          vertical-align: bottom;
+        "
+      >
+        <h1 style="padding-top: 100px; margin: 0; text-align: center">
+          Pricing of Our Agency
+        </h1>
+        <p
+          style="
+            color: rgba(24, 24, 27, 0.7);
+            font-size: 20px;
+            font-family: inter;
+            margin-top: 4px;
+            text-align: center;
+          "
+        >
+          Choose a package that's right for you
+        </p>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          gap: 24px;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 84px;
+        "
+      >
+        <div class="box">
+          <div style="gap: 24px; align-items: center; display: flex">
+            <img style="height: 36px; width: 36px" src="heart.png" alt="" />
+            <div
+              style="color: black; text-align: center; font-family: sans-serif"
+            >
+              Budget Package
+            </div>
+          </div>
+          <div>
+            <h2
+              style="
+                color: black;
+                font-family: Montserrat;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 100%;
+                vertical-align: bottom;
+                margin-top: 36px;
+                margin-bottom: 0%;
+              "
+            >
+              500$
+            </h2>
+            <p
+              style="
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: bottom;
+                color: rgba(145, 145, 145, 1);
+              "
+            >
+              Essentials Covered
+            </p>
+            <p
+              style="
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 100%;
+                vertical-align: bottom;
+                color: rgba(18, 19, 22, 1);
+                margin-top: 32px;
+                margin-left: 40px;
+              "
+            >
+              Includes
+            </p>
+
+            <div>
+              <div
+                style="display: flex; align-items: center; margin-bottom: 16px"
+              >
+                <img style="margin-right: 20px" src="check.png" alt="" />
+                <p class="Font">Group transportation (shared van/bus)</p>
+              </div>
+              <div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <img style="margin-right: 20px" src="check.png" alt="" />
+                  <p class="Font">
+                    Standard accommodation (yurt or guesthouse)
+                  </p>
+                </div>
+                <div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <img style="margin-right: 20px" src="check.png" alt="" />
+                    <p class="Font">Guided lake tour</p>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 16px;
+                      "
+                    >
+                      <img style="margin-right: 20px" src="check.png" alt="" />
+                      <p class="Font">1 meal per day (breakfast)</p>
+                    </div>
+                  </div>
+                  <div class="button">Select Package</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div style="gap: 24px; align-items: center; display: flex">
+            <img style="height: 36px; width: 36px" src="heart.png" alt="" />
+            <div
+              style="color: black; text-align: center; font-family: sans-serif"
+            >
+              Standard Package
+            </div>
+          </div>
+          <div>
+            <h2
+              style="
+                color: black;
+                font-family: Montserrat;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 100%;
+                vertical-align: bottom;
+                margin-top: 36px;
+                margin-bottom: 0%;
+              "
+            >
+              800$
+            </h2>
+            <p
+              style="
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: bottom;
+                color: rgba(145, 145, 145, 1);
+              "
+            >
+              Balanced Adventure
+            </p>
+            <p
+              style="
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 100%;
+                vertical-align: bottom;
+                color: rgba(18, 19, 22, 1);
+                margin-top: 32px;
+                margin-left: 40px;
+              "
+            >
+              Includes
+            </p>
+
+            <div>
+              <div
+                style="display: flex; align-items: center; margin-bottom: 16px"
+              >
+                <img style="margin-right: 20px" src="check.png" alt="" />
+                <p class="Font">Comfortable transportation (mini-bus)</p>
+              </div>
+              <div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <img style="margin-right: 20px" src="check.png" alt="" />
+                  <p class="Font">
+                    Mid-range accommodation (private yurt or lodge)
+                  </p>
+                </div>
+                <div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <img style="margin-right: 20px" src="check.png" alt="" />
+                    <p class="Font">Guided lake tour + nearby hiking</p>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 16px;
+                      "
+                    >
+                      <img style="margin-right: 20px" src="check.png" alt="" />
+                      <p class="Font">2 meals per day (breakfast and dinner)</p>
+                    </div>
+                  </div>
+                  <div class="button">Select Package</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <div style="gap: 24px; align-items: center; display: flex">
+            <img style="height: 36px; width: 36px" src="heart.png" alt="" />
+            <div
+              style="color: black; text-align: center; font-family: sans-serif"
+            >
+              Budget Package
+            </div>
+          </div>
+          <div>
+            <h2
+              style="
+                color: black;
+                font-family: Montserrat;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 100%;
+                vertical-align: bottom;
+                margin-top: 36px;
+                margin-bottom: 0%;
+              "
+            >
+              1200$
+            </h2>
+            <p
+              style="
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: bottom;
+                color: rgba(145, 145, 145, 1);
+              "
+            >
+              Ultimate Comfort
+            </p>
+            <p
+              style="
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 100%;
+                vertical-align: bottom;
+                color: rgba(18, 19, 22, 1);
+                margin-top: 32px;
+                margin-left: 40px;
+              "
+            >
+              Includes
+            </p>
+
+            <div>
+              <div
+                style="display: flex; align-items: center; margin-bottom: 16px"
+              >
+                <img style="margin-right: 20px" src="check.png" alt="" />
+                <p class="Font">Private transportation (SUV)</p>
+              </div>
+              <div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 16px;
+                  "
+                >
+                  <img style="margin-right: 20px" src="check.png" alt="" />
+                  <p class="Font">Luxury accommodation (lakefront lodge)</p>
+                </div>
+                <div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      margin-bottom: 16px;
+                    "
+                  >
+                    <img style="margin-right: 20px" src="check.png" alt="" />
+                    <p class="Font">
+                      Guided tours (lake + reindeer herder experience)
+                    </p>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 16px;
+                      "
+                    >
+                      <img style="margin-right: 20px" src="check.png" alt="" />
+                      <p class="Font">All meals included (local cuisine)</p>
+                    </div>
+                  </div>
+                  <div class="button">Select Package</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <button
+          style="
+            margin-top: 265px;
+            margin-left: 0px;
+            border: 0;
+            border-radius: 50px;
+            width: 167px;
+            height: 44px;
+            align-items: center;
+            border-radius: radius/rounded-full;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <img
+            src="Facebook Icon.png"
+            style="
+              margin-left: 0px;
+              width: 20.16px;
+              height: 20.16px;
+              align-items: center;
+            "
+            alt=""
+          />
+          <h1
+            style="
+              color: rgba(105, 114, 181, 1);
+              font-family: Montserrat;
+              font-weight: 700px;
+              font-size: 18px;
+              line-height: 100%;
+              letter-spacing: 0%;
+              width: 100px;
+            "
+          >
+            Facebook
+          </h1>
+        </button>
+        <button
+          style="
+            margin-top: 265px;
+            margin-left: 40px;
+            border: 0;
+            border-radius: 50px;
+            width: 167px;
+            height: 44px;
+            align-items: center;
+            border-radius: radius/rounded-full;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <img
+            src="Instagram Icon.png"
+            style="
+              margin-left: 0px;
+              width: 20.16px;
+              height: 20.16px;
+              align-items: center;
+            "
+            alt=""
+          />
+          <h1
+            style="
+              color: rgba(105, 114, 181, 1);
+              font-family: Montserrat;
+              font-weight: 700px;
+              font-size: 18px;
+              line-height: 100%;
+              letter-spacing: 0%;
+              width: 100px;
+              margin-left: 10px;
+            "
+          >
+            Instagram
+          </h1>
+        </button>
+        <img
+          style="
+            width: 101px;
+            height: 100%;
+            margin-left: 700px;
+            margin-top: 269.5px;
+          "
+          src="tour.png"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
