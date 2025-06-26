@@ -169,6 +169,19 @@
         padding-bottom: 12px;
         padding-left: 20px;
       }
+      .Giftbg{
+        background-image: url(bg-2.png);
+        height: 692px;
+        text-align: center;
+        margin-top: 12px;
+        background-position: center;
+        padding: 94px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+      }
       .gift{
         color: rgba(0, 0, 0, 1);
         font-family: Inter;
@@ -335,7 +348,7 @@
         background-position: center;
         background-repeat: no-repeat;
         justify-content: flex-start;
-
+        scroll-snap-type: x mandatory;
       }
       .footer-item{
         height: 668px;
@@ -349,6 +362,7 @@
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
+        scroll-snap-align: center;
       }
       nav{
         justify-content: center;
@@ -359,6 +373,28 @@
         align-items: center;
         gap: 10px;
       }
+      .Tablet-footer{
+        display: none;
+       }
+      .Tablet{display: none;
+      }
+
+      .Item:nth-child(2){
+        display: none;
+       }
+       .Item:nth-child(3){
+        display: none;
+       }
+       .Item:nth-child(8){
+        display: none;
+       }
+       .Item:nth-child(7){
+        display: none;
+       }
+       .Tablet{
+        display: none;
+       }
+
       @media (max-width:768px){
         .menu{display: none;
         margin: 575px;
@@ -367,10 +403,51 @@
       nav{
         justify-content: space-between;
       }
-      .header{
+      .section-hero .bg-1{
        background-repeat: no-repeat;
        background-size: 768px;
        gap: 12px 12px;
-       
       }
+      .Giftbg{
+        display: none;
       }
+       .Tablet{
+        display: block;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+       }
+       .Item:nth-child(1){
+        width: 100%;
+       }
+        .Item:nth-child(2){
+        display: block;
+       }
+       .Item:nth-child(3){
+        display: block;
+       }
+       .Item:nth-child(7){
+        display: block;
+       }
+        .Item:nth-child(4){
+        display: none;
+       }
+       .Item:nth-child(5){
+        display: none;
+       }
+       .Item:nth-child(8){
+        display: block;
+       }
+       .Item:nth-child(10){
+        display: none;
+       }
+       .Tablet-footer{
+        display: block;
+       }
+       .PC-footer{
+        display: none;
+       }
+      }
+      
