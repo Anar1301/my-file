@@ -39,6 +39,21 @@
         margin-top: 0%;
         margin-bottom: 16px;
       }
+      .Iphone-text {
+        color: white;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 20px;
+        letter-spacing: -0.28px;
+        text-align: center;
+        vertical-align: middle;
+        align-items: center;
+        text-align: center;
+        margin-top: 120%;
+        margin-bottom: 16px;
+        
+      }
       .Hello {
         font-family: Inter;
         font-weight: 400;
@@ -49,12 +64,46 @@
         vertical-align: middle;
         color: white;
       }
+      .Iphone-p{
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        
+      }
       .section-hero {
         background-image: url(desktop-hero.png);
         padding: 55px;
-
         height: 692px;
         width: 100%;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        align-items: flex-start;
+        background-position: center;
+      }
+      .Iphonepic {
+        background-image: url(iPhone.png);
+        padding: 55px;
+        width: 100%;
+        height: 500px;
+        margin: 0;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        align-items: flex-start;
+        background-position: center;
+      }
+      .Iphonepic-2{
+        background-image: url(iPhone-2.png);
+        padding: 55px;
+        width: 100%;
+        height: 500px;
         margin: 0;
         position: relative;
         text-align: center;
@@ -100,7 +149,6 @@
       .bg-1 {
         background-image: url(bg-1.png);
         padding: 55px;
-
         height: 692px;
         width: 100%;
         margin: 0;
@@ -124,15 +172,40 @@
         margin-top: 0%;
         margin-bottom: 16px;
       }
+      .Iphone-text-2{
+        color: white;
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 100%;
+        letter-spacing: -0.28px;
+        text-align: center;
+        vertical-align: middle;
+        align-items: center;
+        text-align: center;
+        margin-top: -14%;
+        margin-bottom: 16px;
+      }
       .Hello-2 {
         font-family: Inter;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 18px;
         line-height: 32px;
         letter-spacing: 0px;
         text-align: center;
         vertical-align: middle;
         color: white;
+      }
+      .Iphone-p-2 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        margin: 5px;
       }
       .btn-2 {
         width: 123px;
@@ -391,13 +464,13 @@
        .Item:nth-child(7){
         display: none;
        }
-       .Tablet{
+       .iPhone-footer{
         display: none;
        }
 
       @media (max-width:768px){
         .menu{display: none;
-        margin: 575px;
+        margin: 590px;
       }
       .cross{display: block;}
       nav{
@@ -450,4 +523,57 @@
         display: none;
        }
       }
+      .Iphone-text{
+        display: none;
+      }
+      .Iphone-p{
+        display: none;
+      }
+      .Iphonepic{
+        display: none;
+      }
+      .Iphonepic-2{
+        display: none;
+      }
+      Iphone-text-2{
+        display: none;
+      }
+      Iphone-p-2{
+        display: none;
+      }
+      @media (max-width:390px){
+        .menu{display: none;
+        margin: 213px;
+      }
+      .section-hero .bg-1{
+        display: none;
+      }
+      .Iphone-text{
+        display: block;
+      }
+      .Iphone-p{
+        display: block;
+      }
+      .Iphonepic{
+        display: block;
+      }
+      .Iphonepic-2{
+        display: block;
+      }
+      .Iphone-text-2{
+        display: block;
+      }
+      .Iphone-p-2{
+        display: block;
+      }
+      .section-hero, .bg-1{
+        display: none;
+      }
+      .iPhone-footer{
+        display: block;
+      }
+      .Tablet-footer{
+        display: none;
+      }
+     }
       
