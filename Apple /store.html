@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Inter, sans-serif;
+        margin: 0;
+      }
+
+      .menu {
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: -0.28px;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+      }
+      .category {
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+        text-decoration: none;
+        color: black;
+        width: 136px;
+        height: 146px;
+        margin-bottom: 60px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .mnu {
+        display: none;
+      }
+
+      .donate-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(29, 29, 31, 1);
+        padding: 20px 10px;
+        text-align: center;
+      }
+
+      .nav-style {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 24px;
+        background-color: rgba(245, 245, 247, 0.8);
+        padding: 0;
+        height: 44px;
+        text-align: center;
+      }
+
+      .header2-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60px;
+        background-color: white;
+        z-index: 10;
+      }
+
+      .main-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        background-color: rgba(245, 245, 247, 0.8);
+      }
+
+      .header-background {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .uusalt {
+        height: 75px;
+        width: 100%;
+        background: linear-gradient(
+          to right,
+          #74d8ff,
+          /* light blue */ #797bff,
+          /* blue */ #ff59cf,
+          /* pink */ #ff6a4d,
+          /* red-orange */ #ff9800 /* orange */
+        );
+        filter: blur(20px);
+        margin-top: 100px;
+      }
+
+      .store-gradient {
+        font-size: 44px;
+        font-weight: bold;
+        background: linear-gradient(
+          90deg,
+          #0090f7 0%,
+          #ba62fc 50%,
+          #f2416b 100%
+        );
+        margin-top: 80px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        justify-content: start;
+        justify-content: center;
+      }
+      .gray-text {
+        color: rgba(110, 110, 115, 1);
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 52.01px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-top: 80px;
+        margin-left: 32px;
+      }
+      .text-pos {
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+        align-items: center;
+      }
+      .specialist-father {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        justify-content: center;
+      }
+
+      .specialist-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .specialist-father2 {
+        justify-content: end;
+        margin-top: 16px;
+      }
+
+      .specialist {
+        flex-direction: column;
+        margin-left: 759px;
+        margin-top: 80px;
+      }
+      .specialist-photo {
+        height: 35px;
+        width: 35px;
+      }
+      .specialist-text {
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+      }
+      .specialist-track {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        color: rgba(0, 102, 204, 1);
+        text-decoration-thickness: 0%;
+        text-decoration-skip-ink: auto;
+      }
+      .Thelatest-gradient {
+        font-size: 24px;
+        font-weight: bold;
+        background: linear-gradient(
+          90deg,
+          #0090f7 0%,
+          #ba62fc 50%,
+          #f2416b 100%
+        );
+        margin-top: 80px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        justify-content: start;
+        justify-content: center;
+      }
+      .gray-text-2 {
+        color: rgba(110, 110, 115, 1);
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 52.01px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-top: 80px;
+        margin-left: 32px;
+      }
+      .Footer {
+        display: flex;
+        gap: 16px;
+        margin: 12px 12px;
+        width: 100%;
+        overflow: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: flex-start;
+        scroll-snap-type: x mandatory;
+      }
+      .footer-item {
+        width: 480px;
+        height: 500px;
+        border-radius: 18px;
+        background-color: white;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        scroll-snap-align: center;
+      }
+      .text-pos2 {
+        flex-direction: row;
+        display: flex;
+        text-align: center;
+        align-items: center;
+      }
+      .personalization-gradient {
+        font-size: 24px;
+        font-weight: bold;
+        background: linear-gradient(
+          90deg,
+          #0090f7 0%,
+          #ba62fc 50%,
+          #f2416b 100%
+        );
+        margin-top: 80px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        justify-content: start;
+        justify-content: center;
+      }
+      .gray-text-3 {
+        color: rgba(110, 110, 115, 1);
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 52.01px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-top: 80px;
+        margin-left: 32px;
+      }
+      .Holiday-gradient {
+        font-size: 24px;
+        font-weight: bold;
+        background: linear-gradient(
+          90deg,
+          #0090f7 0%,
+          #ba62fc 50%,
+          #f2416b 100%
+        );
+        margin-top: 80px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        justify-content: start;
+        justify-content: center;
+      }
+      .gray-text-4 {
+        color: rgba(110, 110, 115, 1);
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 52.01px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-top: 80px;
+        margin-left: 32px;
+      }
+      .Apple-gradient {
+        font-size: 24px;
+        font-weight: bold;
+        background: linear-gradient(
+          90deg,
+          #0090f7 0%,
+          #ba62fc 50%,
+          #f2416b 100%
+        );
+        margin-top: 80px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        justify-content: start;
+        justify-content: center;
+      }
+      .gray-text-5 {
+        color: rgba(110, 110, 115, 1);
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 52.01px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-top: 80px;
+        margin-left: 32px;
+      }
+      .experience-gradient {
+        font-size: 24px;
+        font-weight: bold;
+        background: linear-gradient(
+          90deg,
+          #0090f7 0%,
+          #ba62fc 50%,
+          #f2416b 100%
+        );
+        margin-top: 80px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        justify-content: start;
+        justify-content: center;
+      }
+      .gray-text-6 {
+        color: rgba(110, 110, 115, 1);
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 52.01px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-top: 80px;
+        margin-left: 32px;
+      }
+      .Savings-gradient {
+        font-size: 24px;
+        font-weight: bold;
+        background: linear-gradient(
+          90deg,
+          #0090f7 0%,
+          #ba62fc 50%,
+          #f2416b 100%
+        );
+        margin-top: 80px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        justify-content: start;
+        justify-content: center;
+      }
+      .gray-text-7 {
+        color: rgba(110, 110, 115, 1);
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 52.01px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-top: 80px;
+        margin-left: 32px;
+      }
+      .gray-text-8 {
+        color: rgba(110, 110, 115, 1);
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 52.01px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-top: 80px;
+        margin-left: 32px;
+      }
+      .Linkitem {
+        width: 125px;
+        height: 40px;
+        padding-top: 10px;
+        padding-right: 12px;
+        padding-bottom: 10px;
+        padding-left: 12px;
+        gap: 8px;
+        border-radius: 999px;
+        border-width: 1px;
+        border: 1px solid rgba(29, 29, 31, 1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="nav-style">
+        <div><img class="apple" src="Logo.png" alt="Apple Logo" /></div>
+        <a href="#" class="menu">Store</a>
+        <a href="#" class="menu">Mac</a>
+        <a href="#" class="menu">iPad</a>
+        <a href="#" class="menu">Watch</a>
+        <a href="#" class="menu">Vision</a>
+        <a href="#" class="menu">AirPods</a>
+        <a href="#" class="menu">TV & Home</a>
+        <a href="#" class="menu">Entertainment</a>
+        <a href="#" class="menu">Accessories</a>
+        <a href="#" class="menu">Support</a>
+        <div class="container">
+          <img src="Search.png" alt="Search" style="margin: 0 14px" />
+          <img src="Item.png" alt="Bag" />
+          <img class="mnu" src="cross.png" alt="Menu" />
+        </div>
+      </nav>
+
+      <section class="header2-box">
+        <p class="donate-text">
+          Pay monthly at 0% APR when you choose to check out with Apple Card
+          Monthly Installments.
+        </p>
+      </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="main-section">
+        <div class="uusalt"></div>
+        <div class="text-pos">
+          <h1 class="store-gradient">Store.</h1>
+          <h2 class="gray-text">Gift magic this holiday.</h2>
+          <div class="specialist">
+            <div class="specialist-father">
+              <img class="specialist-photo" src="who.png" alt="" />
+              <div class="specialist-info">
+                <p class="specialist-text">
+                  <strong>Need shopping help?</strong>
+                </p>
+                <a class="specialist-track" href="">Ask a Specialist</a>
+              </div>
+            </div>
+
+            <div class="specialist-father specialist-father2">
+              <div class="specialist-info">
+                <p class="specialist-text">
+                  <strong>Need shopping help?</strong>
+                </p>
+                <a class="specialist-track" href="">Ask a Specialist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; margin-top: 80px; gap: 12px">
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box1.png"
+              alt=""
+            />Mac</a
+          >
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box2.png"
+              alt=""
+            />iphone</a
+          >
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box3.png"
+              alt=""
+            />iPad</a
+          >
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box4.png"
+              alt=""
+            />Apple Watch</a
+          >
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box5.png"
+              alt=""
+            />Apple Vision Pro</a
+          >
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box6.png"
+              alt=""
+            />Airpods</a
+          >
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box7.png"
+              alt=""
+            />AirTag</a
+          >
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box8.png"
+              alt=""
+            />Apple TV 4K</a
+          >
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box9.png"
+              alt=""
+            />Homepod</a
+          >
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box10.png"
+              alt=""
+            />Accessories</a
+          >
+          <a class="category" href=""
+            ><img
+              style="margin-bottom: 18px"
+              src="photo/box11.png"
+              alt=""
+            />Apple Gift Card</a
+          >
+        </div>
+      </section>
+      <section>
+        <div style="margin-left: 200px" class="text-pos2">
+          <h2 class="Thelatest-gradient">The latest.</h2>
+          <h2 class="gray-text-2">Let them unwrap wonders.</h2>
+        </div>
+        <div class="Footer">
+          <img class="footer-item" src="Listitem.png" alt="" />
+          <img class="footer-item" src="Listitem (1).png" alt="" />
+          <img class="footer-item" src="Listitem (2).png" alt="" />
+          <img class="footer-item" src="Listitem.png" alt="" />
+          <img class="footer-item" src="Listitem (1).png" alt="" />
+          <img class="footer-item" src="Listitem (2).png" alt="" />
+          <img class="footer-item" src="Listitem (3).png" alt="" />
+        </div>
+      </section>
+      <section>
+        <div style="margin-left: 200px" class="text-pos2">
+          <h2 class="personalization-gradient">Personalization.</h2>
+          <h2 class="gray-text-3">Let them unwrap wonders.</h2>
+        </div>
+        <div class="Footer">
+          <img class="footer-item" src="Listitem (4).png" alt="" />
+          <img class="footer-item" src="Listitem (5).png" alt="" />
+          <img class="footer-item" src="Listitem (6).png" alt="" />
+          <img class="footer-item" src="Listitem (7).png" alt="" />
+          <img class="footer-item" src="Listitem (8).png" alt="" />
+          <img class="footer-item" src="Listitem (5).png" alt="" />
+          <img class="footer-item" src="Listitem (6).png" alt="" />
+        </div>
+      </section>
+      <section>
+        <div style="margin-left: 200px" class="text-pos2">
+          <h2 class="Holiday-gradient">Holiday Picks.</h2>
+          <h2 class="gray-text-4">Add more magic to the moment.</h2>
+        </div>
+        <div class="Footer">
+          <img class="footer-item" src="Listitem (9).png" alt="" />
+          <img class="footer-item" src="Listitem (10).png" alt="" />
+          <img class="footer-item" src="Listitem (11).png" alt="" />
+          <img class="footer-item" src="Listitem (12).png" alt="" />
+          <img class="footer-item" src="Listitem (13).png" alt="" />
+          <img class="footer-item" src="Listitem (10).png" alt="" />
+          <img class="footer-item" src="Listitem (11).png" alt="" />
+        </div>
+      </section>
+      <section>
+        <div style="margin-left: 200px" class="text-pos2">
+          <h2 class="Apple-gradient">Only at Apple.</h2>
+          <h2 class="gray-text-5">With you every step of the holiday</h2>
+        </div>
+        <div class="Footer">
+          <img class="footer-item" src="Listitem (14).png" alt="" />
+          <img class="footer-item" src="Listitem (15).png" alt="" />
+          <img class="footer-item" src="Listitem (16).png" alt="" />
+          <img class="footer-item" src="Listitem (17).png" alt="" />
+          <img class="footer-item" src="Listitem (13).png" alt="" />
+          <img class="footer-item" src="Listitem (16).png" alt="" />
+          <img class="footer-item" src="Listitem (17).png" alt="" />
+          <img class="footer-item" src="Listitem (13).png" alt="" />
+        </div>
+      </section>
+      <section>
+        <div style="margin-left: 200px" class="text-pos2">
+          <h2 class="experience-gradient">The Apple Experience.</h2>
+          <h2 class="gray-text-6">Even more awe in store.</h2>
+        </div>
+        <div class="Footer">
+          <img class="footer-item" src="Listitem (18).png" alt="" />
+          <img class="footer-item" src="Listitem (19).png" alt="" />
+          <img class="footer-item" src="Listitem (20).png" alt="" />
+          <img class="footer-item" src="Listitem (19).png" alt="" />
+          <img class="footer-item" src="Listitem (21).png" alt="" />
+          <img class="footer-item" src="Listitem (20).png" alt="" />
+          <img class="footer-item" src="Listitem (19).png" alt="" />
+          <img class="footer-item" src="Listitem (21).png" alt="" />
+        </div>
+      </section>
+      <section>
+        <div style="margin-left: 200px" class="text-pos2">
+          <h2 class="Savings-gradient">Special Savings.</h2>
+          <h2 class="gray-text-7">
+            iPhone carrier deals and exclusive savings for school,
+          </h2>
+          <h2 class="gray-text-7">businesses, and more.</h2>
+        </div>
+        <div class="Footer">
+          <img class="footer-item" src="Listitem (22).png" alt="" />
+          <img class="footer-item" src="Listitem (23).png" alt="" />
+          <img class="footer-item" src="Listitem (24).png" alt="" />
+          <img class="footer-item" src="Listitem (25).png" alt="" />
+          <img class="footer-item" src="Listitem (23).png" alt="" />
+          <img class="footer-item" src="Listitem (24).png" alt="" />
+          <img class="footer-item" src="Listitem (25).png" alt="" />
+        </div>
+      </section>
+      <section>
+        <div style="margin-left: 200px" class="text-pos2">
+          <h2 class="gray-text-8">Quick Links</h2>
+        </div>
+        <div class="Footer">
+          <img class="Linkitem" src="Item -_ Link.png" alt="" />
+          <img class="Linkitem" src="Item -_ Link (1).png" alt="" />
+          <img class="Linkitem" src="Item -_ Link (2).png" alt="" />
+          <img class="Linkitem" src="Item -_ Link (3).png" alt="" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
