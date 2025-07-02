@@ -379,6 +379,7 @@
         margin-top: 80px;
         background-clip: text;
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
         -webkit-text-fill-color: transparent;
         text-align: center;
@@ -419,12 +420,117 @@
         border-width: 1px;
         border: 1px solid rgba(29, 29, 31, 1);
       }
+      .footer-btn {
+        width: 125px;
+        height: 40px;
+        border-radius: 25px;
+        border-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 34px;
+        border: solid;
+      }
+      .footer-btn-text {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .footer-btn-1 {
+        width: 125px;
+        height: 40px;
+        border-radius: 25px;
+        border-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 34px;
+        border: solid;
+      }
+      .footer-btn-text-1 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .footer-btn-2 {
+        width: 125px;
+        height: 40px;
+        border-radius: 25px;
+        border-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 34px;
+        border: solid;
+      }
+      .footer-btn-text-2 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .footer-btn-3 {
+        width: 125px;
+        height: 40px;
+        border-radius: 25px;
+        border-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 34px;
+        border: solid;
+      }
+      .footer-btn-text-3 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .footer-btn-img {
+        width: 8px;
+        height: 8px;
+        margin-left: 8px;
+        background-color: transparent;
+      }
+      .footer-btn1 {
+        width: 137px;
+      }
+      .footer-btn2 {
+        width: 91px;
+      }
+      .footer-btn3 {
+        width: 114px;
+        margin-bottom: 30px;
+      }
+      .End-footer {
+        font-family: Inter;
+        font-weight: 700px;
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-top: 40px;
+      }
     </style>
   </head>
 
   <body>
     <!-- Header -->
-    <header>
+    <header style="position: fixed; width: 100%; z-index: 10">
       <nav class="nav-style">
         <div><img class="apple" src="Logo.png" alt="Apple Logo" /></div>
         <a href="#" class="menu">Store</a>
@@ -641,9 +747,9 @@
         <div style="margin-left: 200px" class="text-pos2">
           <h2 class="Savings-gradient">Special Savings.</h2>
           <h2 class="gray-text-7">
-            iPhone carrier deals and exclusive savings for school,
+            iPhone carrier deals and exclusive savings for school,businesses,
+            and more.
           </h2>
-          <h2 class="gray-text-7">businesses, and more.</h2>
         </div>
         <div class="Footer">
           <img class="footer-item" src="Listitem (22).png" alt="" />
@@ -656,14 +762,26 @@
         </div>
       </section>
       <section>
-        <div style="margin-left: 200px" class="text-pos2">
-          <h2 class="gray-text-8">Quick Links</h2>
-        </div>
-        <div class="Footer">
-          <img class="Linkitem" src="Item -_ Link.png" alt="" />
-          <img class="Linkitem" src="Item -_ Link (1).png" alt="" />
-          <img class="Linkitem" src="Item -_ Link (2).png" alt="" />
-          <img class="Linkitem" src="Item -_ Link (3).png" alt="" />
+        <div>
+          <h4 class="End-footer">Quick Links</h4>
+          <div style="display: flex; gap: 12px">
+            <button class="footer-btn">
+              <p class="footer-btn-text">Order Status</p>
+              <img class="footer-btn-img" src="arrow.png" alt="" />
+            </button>
+            <button class="footer-btn-1">
+              <p class="footer-btn-text-1">Shopping Help</p>
+              <img class="footer-btn-img" src="arrow.png" alt="" />
+            </button>
+            <button class="footer-btn-2">
+              <p class="footer-btn-text-2">Returns</p>
+              <img class="footer-btn-img" src="arrow.png" alt="" />
+            </button>
+            <button class="footer-btn-3">
+              <p class="footer-btn-text-3">Your Saves</p>
+              <img class="footer-btn-img" src="arrow.png" alt="" />
+            </button>
+          </div>
         </div>
       </section>
     </main>
